@@ -1,0 +1,103 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: #eee7e5; /* Main background color */
+  width: 100%; /* Ensure navbar occupies full width */
+  overflow: hidden; /* Prevent content overflow */
+  position: relative; /* Position relative for inner elements */
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  color: #ffffff; /* Logo color */
+  background-color: #2d2e2a;
+}
+
+.navbar-nav {
+  display: flex; /* Use Flexbox to layout items */
+  justify-content: space-around; /* Distribute items evenly */
+  padding-left: 0; /* Remove padding to avoid unnecessary offset */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default list styling */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.nav-item {
+  margin: 0 40px; /* Add horizontal margin between items */
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.btn {
+  padding: 8px 16px; /* Add padding for button */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: rgb(245, 244, 243);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #c53232;
+  background-color: #fefbf9;
+}
+
+.navbar .btn-primary {
+  background-color: #ffffff;
+  color: #f5451d;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .btn-primary:hover {
+  background-color: #2d2e2a;
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

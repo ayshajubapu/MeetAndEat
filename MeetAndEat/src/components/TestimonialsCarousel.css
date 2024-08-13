@@ -1,0 +1,35 @@
+/* src/index.css */
+.carousel-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .testimonial-card {
+    text-align: center;
+    margin: 0 2rem;
+  }
+  
+  .rating {
+    color: #ff7e67;
+    font-size: 2.5rem;
+  }
+  
+  .carousel-control {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  .carousel-control.prev {
+    margin-right: 2rem;
+  }
+  
+  .carousel-control.next {
+    margin-left: 2rem;
+  }
+  

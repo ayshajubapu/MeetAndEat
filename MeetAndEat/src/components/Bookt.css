@@ -1,0 +1,95 @@
+/* Default styles for desktop and large screens */
+.book-table-container {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set your preferred height */
+  background-image: url('https://media.istockphoto.com/id/1159992039/photo/cozy-restaurant-for-gathering-with-friends.webp?b=1&s=170667a&w=0&k=20&c=Ez23X3RWtS4DiBOZbeapzMCi2M13uJUYEriJf8F_hNM='); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 3em;
+  font-family: 'Your Font Here', sans-serif; /* Replace with your font family */
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.book-now-btn {
+  background-color: #f04d25; /* Button color */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #d13e1f; /* Darker button color on hover */
+}
+
+/* Tablet view (min-width: 768px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .book-now-btn {
+    padding: 12px 24px;
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  .book-table-container {
+    height: 400px; /* Adjust height for mobile */
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    max-width: 90%; /* Ensure subtitle fits well on mobile screens */
+  }
+
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+}
