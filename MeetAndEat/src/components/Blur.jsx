@@ -46,7 +46,7 @@ const Blur = () => {
             CAUSALMEETINGCREATESMEMORIES
           </div>
         </section>
-        {[6, 125, 183, 155].map((sig, index) => (
+        {[6, 183,135, 155].map((sig, index) => (
           <section key={index} className="demo-Blur">
             <ul className="wrapper">
               {[
