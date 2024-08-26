@@ -3,7 +3,7 @@ import './Shop.css';
 
 const products = [
   {
-    name: 'Frencg Fries',
+    name: 'French Fries',
     oldPrice: '49$',
     newPrice: '28$',
     imgUrl: 'https://media.istockphoto.com/id/182752085/photo/french-fries-in-bowl.webp?b=1&s=170667a&w=0&k=20&c=93XJYFNSodybD4SP1aSb4wZnJYoSowP1RVsosAt8fI0=', // Replace with your image URL
